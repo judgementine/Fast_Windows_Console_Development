@@ -119,11 +119,11 @@ namespace FWC
 	}
 	int key_State(unsigned char key)
 	{
-		return Internals::G_key_state[key];
+		return Internals::G_key_state[key] & 0x80;
 	}
 	int key_Prev_State(unsigned char key)
 	{
-		return Internals::G_prev_key_state[key];
+		return Internals::G_prev_key_state[key] & 0x80;
 	}
 	
 	void set_Color(unsigned char color)

@@ -13,8 +13,8 @@ int main()
 
 		if (FWC::key_State('A'))
 		{
+			FWC::set_Color(0xF0);
 			FWC::put(10, 10, 'A');
-		
 		}
 		
 		FWC::present();
