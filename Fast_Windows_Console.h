@@ -94,8 +94,8 @@ namespace FWC
 		SetConsoleCursorInfo(Internals::G_front_buffer, &info);
 		SetConsoleCursorInfo(Internals::G_back_buffer, &info);
 
-		memset(Internals::G_key_state, 0, 256 * 256);
-		memset(Internals::G_prev_key_state, 0, 256 * 256);
+		memset(Internals::G_key_state, 0, 256);
+		memset(Internals::G_prev_key_state, 0, 256);
 
 		SetConsoleActiveScreenBuffer(Internals::G_front_buffer);
 
